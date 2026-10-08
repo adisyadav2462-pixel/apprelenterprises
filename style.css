@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #0b3d91, #1565c0);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #dbeafe;
+    margin-top: 5px;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    padding: 9px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #0b3d91;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* SECTIONS */
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #0b3d91;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+section h3 {
+    color: #1565c0;
+    margin-bottom: 8px;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 55px 30px;
+    background: linear-gradient(135deg, #e8f1ff, #ffffff);
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 12px auto;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background-color: #0b5ed7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #082b63;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f8ff;
+    border-left: 5px solid #1565c0;
+    padding: 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* LIST */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.gallery-item {
+    text-align: center;
+    background-color: #f4f8ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+}
+
+/* CONTACT */
+
+.contact-info {
+    background-color: #eef5ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* FORM */
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    color: #0b3d91;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #b7c9e2;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1565c0;
+}
+
+/* SUBMIT */
+
+input[type="submit"] {
+    background-color: #0b5ed7;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #082b63;
+}
+
+/* CENTER */
+
+.center {
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #082b63;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #dbeafe;
+    margin: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 3px;
+        padding: 8px 10px;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: auto;
+    }
+}
